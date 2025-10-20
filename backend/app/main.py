@@ -12,7 +12,7 @@ from pydub import AudioSegment
 from pydub.utils import which
 
 # Ensure pydub finds ffmpeg.exe
-AudioSegment.converter = which("C:\\Users\\SIRI\\ffmpeg\\bin\\ffmpeg.exe")  # Enter your own path e.g., C:\ffmpeg\bin\ffmpeg.exe via PATH
+AudioSegment.converter = which("C:\\Users\\SIRI\\ffmpeg\\bin\\ffmpeg.exe")  # Enter your own path e.g., C:\ffmpeg\bin\ffmpeg.exe 
 
 from .db import Base, engine, get_db
 from . import models, schemas, crud
