@@ -9,8 +9,7 @@ from pydub.utils import which
 from sqlalchemy.orm import Session
 
 # Ensure pydub finds ffmpeg.exe
-AudioSegment.converter = which("C:\\Users\\SIRI\\ffmpeg\\bin\\ffmpeg.exe")
-
+AudioSegment.converter = which("C:\\Users\\SIRI\\ffmpeg\\bin\\ffmpeg.exe")  # Enter your own path e.g., C:\ffmpeg\bin\ffmpeg.exe 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
@@ -64,3 +63,4 @@ def generate_missing_audio(limit: int = 500):
 
 if __name__ == "__main__":
     generate_missing_audio()
+
