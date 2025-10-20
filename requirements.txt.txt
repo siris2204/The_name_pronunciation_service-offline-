@@ -1,8 +1,0 @@
-fastapi
-uvicorn[standard]
-sqlalchemy
-pydantic
-aiofiles
-python-multipart
-pyttsx3
-pydub
